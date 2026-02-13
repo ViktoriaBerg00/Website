@@ -1,0 +1,237 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Page setup ***************/
+main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  padding: 20px;
+}
+
+/*************** Fonts *********************/
+
+@font-face {
+  font-family: "Bebas Neue";
+  src:
+    url(fonts/Bebas/bebasneue-regular-webfont.woff) format("woff"),
+    url(fonts/Bebas/bebasneue-regular-webfont.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+/*************** Colors *********************/
+.color1 {
+  color: #39291d;
+}
+.color2 {
+  color: #c9b08f;
+}
+.color3 {
+  color: #efe5d8;
+}
+.color4 {
+  color: #261b13;
+}
+.color5 {
+  color: #705338;
+}
+
+.color6 {
+  color: #cd84c0;
+}
+
+.color7 {
+  color: #ad058e;
+}
+
+/*************** Font formats *********************/
+h1 {
+  color: #261b13;
+  margin-block: 2rem 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5.5rem;
+}
+
+h2 {
+  color: #261b13;
+  margin-block: 2rem 0.8rem;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-style: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #39291d;
+  margin-block: 2rem 0.8rem;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+p {
+  color: #705338;
+  margin-block: 2rem 1rem;
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+dl {
+  color: #705338;
+  margin-block: 2rem 1rem;
+  font-family: "Montserrat";
+  margin-block: 2rem;
+  margin-left: 2rem;
+}
+dt {
+  font-size: 20px;
+}
+dd {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+body {
+  background-color: #efe5d8;
+}
+
+/*************** Forside *********************/
+
+.minforside {
+  background-color: #261b13;
+}
+
+.minforside p {
+  color: #efe5d8;
+}
+.minforside h2 {
+  color: #c9b08f;
+}
+.minforside h1 {
+  color: #c9b08f;
+}
+
+.minforside dl {
+  color: #cd84c0;
+}
+
+/******** Billeder central *********/
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******** Styling af knap på forside *********/
+
+.linktilcomputer {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background-color: #cd84c0;
+  color: #261b13;
+
+  font-family: "Montserrat";
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.linktilcomputer:hover {
+  background-color: #ad058e;
+  color: #261b13;
+}
+
+/****** Styling af Menu *********/
+
+/******** Mobil *********/
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}
+
+/****** Desktop *********/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #cd84c0;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: #261b13;
+  border-radius: 12px;
+  padding: 0.4rem 0.2rem;
+  position: relative;
+}
+
+nav a:hover {
+  color: #ad058e;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
